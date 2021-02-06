@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import { ScrollView } from 'react-native-gesture-handler'
 import { Button, Input, InputPassword } from '../../components'
 
-const Register = () => {
+const Register = ({navigation}) => {
     return (
         <View style={styles.container}>
             <ScrollView showsVerticalScrollIndicator={false}>
@@ -16,7 +16,7 @@ const Register = () => {
                 <InputPassword label="Password" />
                 <InputPassword label="Re-Password" />
                 <View style={{ height: 20 }} />
-                <Button title="Register" />
+                <Button title="Continue" onPress={() => navigation.navigate("UploadPhoto1")} />
                 <View style={{ height: 10 }} />
             </ScrollView>
         </View>
