@@ -5,7 +5,7 @@ const Splash = ({navigation}) => {
     useEffect(() =>{
         setTimeout(() => {
             navigation.replace('GetStarted')
-        }, 2000)
+        }, 4000)
     }, [])
     return (
         <View style={styles.container}>
@@ -18,13 +18,16 @@ export default Splash
 
 const styles = StyleSheet.create({
     text: {
-        fontSize: 24,
-        fontWeight: '900'
+        fontSize: 40,
+        fontWeight: '900',
+        fontFamily: 'POLYA',
+        color: 'white',
     },
     container: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        color: '#ecf0f1'
+        color: '#ecf0f1',
+        backgroundColor: '#3498db'
     }
 })
