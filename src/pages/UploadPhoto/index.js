@@ -4,7 +4,7 @@ import { ICaddphoto, ILnulluser } from '../../assets'
 import { Button } from '../../components'
 import { Header } from '../../components/molecules'
 
-const UploadPhoto1 = () => {
+const UploadPhoto1 = ({navigation}) => {
     return (
         <View style={styles.container}>
             <Header />
@@ -20,7 +20,7 @@ const UploadPhoto1 = () => {
                     <Text style={styles.id}>ID Number</Text>
                 </View>
                 <View>
-                    <Button title="Upload and Continue" />
+                    <Button title="Upload and Continue" onPress={() => navigation.replace('MainApp')} />
                 </View>
             </View>
         </View>
