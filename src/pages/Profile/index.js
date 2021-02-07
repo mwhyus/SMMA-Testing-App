@@ -22,6 +22,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#ecf0f1',
         flex: 1,
         borderBottomLeftRadius: 20,
-        borderBottomRightRadius: 20
+        borderBottomRightRadius: 20,
     },
 })
