@@ -43,14 +43,12 @@ const styles = StyleSheet.create({
         flex: 1,
         borderBottomLeftRadius: 20,
         borderBottomRightRadius: 20,
-<<<<<<< HEAD
         justifyContent: 'space-between'
     },
     nullphoto: {
         height: 80,
         width: 80,
     },
-
     border: {
         width: 95,
         height: 95,
@@ -63,8 +61,6 @@ const styles = StyleSheet.create({
     },
     smallcontainer: {
         marginTop: 10,
-=======
->>>>>>> 17d591cc94247b688cf69336f44f1ac8cd7dea84
     },
     text: {
         fontSize: 20,
