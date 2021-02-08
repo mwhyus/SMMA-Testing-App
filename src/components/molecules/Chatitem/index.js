@@ -35,7 +35,8 @@ const styles = StyleSheet.create({
     },
     date: {
         fontSize: 11,
-        marginTop: 8
+        marginTop: 8,
+        marginRight: 20
     },
     chatDate: {
         fontSize: 11,
