@@ -1,7 +1,12 @@
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import Btnsend from './Btnsend'
 
-const Button = ({ type, title, onPress }) => {
+const Button = ({ type, title, onPress, disable }) => {
+
+    if (type == 'btn-icon'){
+        return <Btnsend disable={disable}/>
+    }
     return (
         <TouchableOpacity style={styles.container(type)} onPress={onPress}>
             <Text style={styles.text(type)}>{title}</Text>

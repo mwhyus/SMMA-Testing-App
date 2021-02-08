@@ -13,7 +13,7 @@ const GetStarted = ({navigation}) => {
             <View>
                 <Button title='Get Started' onPress={() => navigation.navigate("Register")}/>
                 <View style={{height: 16}} />
-                <Button type='secondary' title='Sign In'/>
+                <Button type='secondary' title='Sign In' onPress={() => navigation.navigate('Login')}/>
             </View>
 
         </ImageBackground>

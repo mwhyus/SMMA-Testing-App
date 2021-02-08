@@ -7,7 +7,7 @@ import { Header } from '../../components/molecules'
 const UploadPhoto1 = ({navigation}) => {
     return (
         <View style={styles.container}>
-            <Header />
+            <Header title="Upload Photo" onPress={() => navigation.goBack()} />
             <View style={styles.content}>
                 <View style={styles.profile}>
                     <View style={styles.border}>

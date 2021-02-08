@@ -1,6 +1,6 @@
 import React from 'react'
 import { Image, StyleSheet, Text, View } from 'react-native'
-import {ILperson2 } from '../../../assets'
+import { ILperson2 } from '../../../assets'
 
 const ListPerson2 = () => {
     return (

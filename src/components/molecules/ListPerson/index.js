@@ -1,16 +1,18 @@
 import React from 'react'
-import { Image, StyleSheet, Text, View } from 'react-native'
+import { Image, StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import { ILperson1 } from '../../../assets'
+import { useNavigation } from '@react-navigation/native';
 
 const ListPerson = () => {
+    const navigation = useNavigation(); 
     return (
         <View style={styles.container}>
             <Image source={ILperson1} style={styles.person} />
             <View />
-            <View style={styles.divider}>
+            <TouchableOpacity onPress={() => navigation.navigate("Chatting")} style={styles.divider} >
                 <Text style={styles.name}>Armin Artelt</Text>
                 <Text style={styles.chat}>Hello, Good morning...</Text>
-            </View>
+            </TouchableOpacity>
         </View>
     )
 }

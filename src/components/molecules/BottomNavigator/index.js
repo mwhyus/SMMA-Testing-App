@@ -36,14 +36,12 @@ const index = ({state, descriptors, navigation}) => {
           };
   
           return (
-
             <TabItem
             ket={index}
             title={label}
             active={isFocused}
             onPress={onPress}
             onLongPress={onLongPress} />
-  
           );
         })}
       </View>
